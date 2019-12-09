@@ -1,0 +1,35 @@
+@keyframes open-menu{
+	0%{
+		opacity: 0;
+		-webkit-transform: perspective(600px) rotateX(90deg);
+		-ms-transform: perspective(600px) rotateX(90deg);
+		-o-transform: perspective(600px) rotateX(90deg);
+		transform: perspective(600px) rotateX(90deg);
+	}
+	100%{
+		opacity: 0.92;
+		-webkit-transform: perspective(600px) rotateX(0deg);
+		-ms-transform: perspective(600px) rotateX(0deg);
+		-o-transform: perspective(600px) rotateX(0deg);
+		transform: perspective(600px) rotateX(0deg);
+	}
+}
+
+@keyframes fixedtop{
+	0%{
+		top: -100px;
+	}
+	100%{
+		top: 0;
+	}
+}
+@keyframes nofixedtop{
+	0%{
+		position: fixed;
+		top: 0;
+	}
+	100%{
+		position: fixed;
+		top: -100px;
+	}
+}

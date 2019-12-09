@@ -1,0 +1,36 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'PT Serif', serif;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	&:hover{
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+section, footer{
+	@include md{
+		padding: 5rem 0;
+	}
+	@include sm{
+		padding: 4rem 0;
+	}
+	@include xs{
+		padding: 3rem 0;
+	}
+	padding: 6rem 0;
+	h1{
+		margin-bottom: 4rem;
+	}
+}

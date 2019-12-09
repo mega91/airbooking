@@ -1,0 +1,26 @@
+[
+	{
+		"dayIn" : "20",
+		"mounthIn": "Jun",
+		"dayOut" : "10",
+		"mounthOut": "Jul"
+	},
+	{
+		"dayIn" : "10",
+		"mounthIn": "May",
+		"dayOut" : "15",
+		"mounthOut": "Dec"
+	},
+	{
+		"dayIn" : "30",
+		"mounthIn": "Apr",
+		"dayOut" : "10",
+		"mounthOut": "Nov"
+	},
+	{
+		"dayIn" : "20",
+		"mounthIn": "Mar",
+		"dayOut" : "10",
+		"mounthOut": "Sep"
+	}
+]

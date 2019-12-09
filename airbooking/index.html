@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AirBooking</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/brands.min.css">
+	<link rel="stylesheet" href="css/solid.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loader.css">
+	<style>
+	</style>
+</head>
+<body>
+
+<!-- start loader -->
+
+<div class="lds-facebook"><span><div></div><div></div><div></div></span></div>
+
+<!-- end loader -->
+
+<!-- start top navbar -->
+
+<nav id="top-nav">
+	<button class="menu btn wow fadeInLeft">
+		<i class="fas fa-bars"></i>
+	</button>
+	<a href="#" class="logo wow zoomIn">airbooking</a>
+	<button class="search btn wow fadeInRight">
+		<i class="fas fa-search"></i>
+	</button>
+	<form class="search">
+		<button class="close">
+			<i class="fas fa-times"></i>
+		</button>
+		<div class="form-group">
+			<input type="search" placeholder="search...">
+			<button class="btn" type="submit">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</form>
+	<ul class="menu">
+		<li class="close">
+			<i class="fas fa-times"></i>
+		</li>
+		<li><a href="#">home</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">portfolio</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+
+<!-- end top navbar -->
+
+
+<!-- start header -->
+
+<header>
+<div class="content">
+	<h1 class="wow fadeIn" data-wow-delay="0.3s">A Brand New Hotel Beyond Ordinary</h1>
+	<a href="#" class="btn wow fadeIn" data-wow-delay="0.6s">explore it</a>
+	<form class="date wow fadeIn" data-wow-delay="0.9s">
+		<div class="box check-in">
+			<span class="name">check in</span>
+			<div class="center">
+				<span class="number" data-select="dayin">16</span>
+				<span class="choose-date" data-select="checkin">jun</span>
+			</div>
+			<div class="selectbox">
+				<select name="dayin" id="dayin" class="day"></select>
+				<select name="checkin" id="checkin" class="mounth"></select>
+			</div>
+		</div>
+		<div class="box check-out">
+			<span class="name">check out</span>
+			<div class="center">
+				<span class="number" data-select="dayout">26</span>
+				<span class="choose-date" data-select="checkout">jun</span>
+			</div>
+			<div class="selectbox">
+				<select name="dayout" id="dayout" class="day"></select>
+				
+				<select name="checkout" id="checkout" class="mounth"></select>
+			</div>
+		</div>
+		<div class="box guest">
+			<span class="name">guest</span>
+			<div class="center">
+				<span class="number" data-select="guest">3</span>
+			</div>
+			<div class="selectbox">
+				<select name="guest" id="guest" class="guest"></select>
+			</div>
+		</div>
+		<button type="submit" class="btn box box-blue avilable"  data-toggle="modal" data-target="#message">
+			check avilable
+		</button>
+	</form>
+</div>
+
+<ul class="social-media">
+	<li><a href="#"><i class="wow fadeInLeft fab fa-facebook-f" data-wow-delay="1s"></i></a></li>
+	<li><a href="#"><i class="wow fadeInLeft fab fa-twitter" data-wow-delay="1.3s"></i></a></li>
+	<li><a href="#"><i class="wow fadeInLeft fab fa-linkedin-in" data-wow-delay="1.5s"></i></a></li>
+	<li><a href="#"><i class="wow fadeInLeft fab fa-instagram" data-wow-delay="1.8s"></i></a></li>
+</ul>
+
+
+
+</header>
+
+<!-- Modal -->
+<div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Check Avilable</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end header -->
+
+<!-- start our rooms section -->
+
+<section id="our-rooms">
+	<div class="container text-center">
+		<h1 class="wow fadeInUpBig">our rooms</h1>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.1s">
+				<a href="#">
+					<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.2s">
+				<a href="#">
+					<img src="imgs/room2.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.3s">
+				<a href="#">
+					<img src="imgs/room3.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.4s">
+				<a href="#">
+					<img src="imgs/room4.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.5s">
+				<a href="#">
+					<img src="imgs/room5.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUpBig" data-wow-delay="0.6s">
+				<a href="#">
+					<img src="imgs/room6.jpg" alt="room" class="img-fluid">
+					<span class="content">
+						<span class="room-type">family room</span>
+						<div class="price">from 30$</div>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- end our rooms section -->
+
+<!-- start best room section -->
+
+<section id="best-room">
+	<div class="container">
+		<div class="row">
+			<div class="image col-md-9 col-sm-12 wow zoomIn">
+				<img src="imgs/best-room.jpg" alt="best room" class="img-fluid">
+			</div>
+			<div class="content wow zoomIn">
+				<h1>Explorer Your Best Room</h1>
+				<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="x"></div>
+<!-- end best room section -->
+
+<!-- start services -->
+
+<section id="services">
+	<div class="container">
+		<div class="row">
+			<div class="item col-md-4 text-center wow zoomIn">
+				<img src="imgs/s1.png" alt="services" class="img-fluid">
+				<h3>Restaurant</h3>
+				<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+			</div>
+			<div class="item col-md-4 text-center wow zoomIn" data-wow-delay="0.2s">
+				<img src="imgs/s2.png" alt="services" class="img-fluid">
+				<h3>Sports Club</h3>
+				<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+			</div>
+			<div class="item col-md-4 text-center wow zoomIn" data-wow-delay="0.4s">
+				<img src="imgs/s3.png" alt="services" class="img-fluid">
+				<h3>Pick up</h3>
+				<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- end services -->
+
+<!-- start find room section -->
+
+<section id="find-room">
+	<div class="row">
+		<div class="img col-md-8">
+			<img src="imgs/find.jpg" alt="best room" class="img-fluid w-100">
+		</div>
+		<div class="content col-md-4">
+			<h1 class="wow fadeInUp">Find Your Best Room Here</h1>
+			<p class="wow fadeInUp" data-wow-delay="0.2s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+			</p><p class="wow fadeInUp" data-wow-delay="0.4s">
+			Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+			<a href="#" class="wow fadeInUp" data-wow-delay="0.6s">read more</a>
+		</div>
+	</div>
+</section>
+
+<!-- end find room section -->
+
+<!-- start from the guest -->
+
+<section id="from-the-guest">
+	<div class="container text-center">
+		<h1 class="wow zoomIn">From The Guest</h1>
+		<p class="text text-left wow zoomIn" data-wow-delay="0.3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+		<div class="media wow flipInY" data-wow-delay="0.6s">
+		  <img src="imgs/user.png" class="mr-3" alt="user">
+		  <div class="media-body">
+		    <h5 class="mt-0">Andrew Strauss</h5>
+		    From Ne\w York, US
+		  </div>
+		</div>
+	</div>
+</section>
+
+<!-- end from the guest -->
+
+<!-- start video section -->
+
+<section id="video">
+	<div class="container text-center">
+		<h1 class="wow zoomIn">Keep Clam And 
+Enjoy Vaction</h1>
+<button class="btn wow zoomIn">
+	<i class="fas fa-play fa-5x"></i>
+</button>
+	</div>
+</section>
+
+<!-- end video section -->
+
+<!-- start lastest news section -->
+
+
+
+<section id="lastest-news">
+	<div class="container">
+		<div class="row">
+			<div class="item col-lg-4 col-md-6 wow fadeInUp">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+				<div class="cardo">
+					<div class="front">
+						<div class="content">
+							<img src="imgs/room1.jpg" alt="room" class="img-fluid">
+							<div class="text">
+								<h3>This is a slider post </h3>
+								<span class="date">June 18, 2018</span>
+							</div>
+						</div>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h3>This is a slider post </h3>
+							<span class="date">June 18, 2018</span>
+							<p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</p>
+							<a href="#" class="btn text-capitalize">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- end lastest news section -->
+
+<!-- start footer -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="airbooking col-md-4 mb-3">
+				<h5 class="header">
+					<a href="#" class="logo">airbooking</a>
+				</h5>
+				<p>Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+				<div class="media">
+				  <i class="fas fa-map-marker-alt mr-3"></i>
+				  <div class="media-body">
+				    <h6 class="mt-0">2345  Lyon Avenue</h6>
+				    <h6>Boston, MA, Massachusetts</h6>
+				  </div>
+				</div>
+				<div class="media">
+				  <i class="fas fa-phone-alt mr-3"></i>
+				  <div class="media-body">
+				    <h6 class="mt-0">508-960-5584</h6>
+				    <h6>857-366-4240</h6>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-3 mb-3">
+				<h5 class="header">Quick Links</h5>
+				<ul class="links">
+					<li><a href="#">Accomodation</a></li>
+					<li><a href="#">Noordwijk</a></li>
+					<li><a href="#">Food & Drinks</a></li>
+					<li><a href="#">Wellness</a></li>
+					<li><a href="#">Beach Venues</a></li>
+					<li><a href="#">Manifesto</a></li>
+					<li><a href="#">Amenities</a></li>
+				</ul>
+			</div>
+			<div class="col-md-1 space mb-0"></div>
+			<div class="col-md-4 mb-3">
+				<h5 class="header">Connect With Us</h5>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- end footer -->
+
+<!-- scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+</body>
+</html>
